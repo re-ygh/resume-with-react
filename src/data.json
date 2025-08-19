@@ -1,0 +1,61 @@
+{
+    "title": "Hello I'm Reza",
+    "subtitle": "Front end Intern | Coputer Enginering Student",
+    "links": {
+        "github": "https://github.com/re-ygh",
+        "linkedin": "https://ir.linkedin.com/in/reza-yaghoubi-81a761353",
+        "telegram": "https://t.me/Re_ygh"
+    },
+    "sections": [
+        {
+            "title": "About",
+            "items": [
+                {
+                    "type": "P",
+                    "content": "I'm a Computer Engineering student at the University of Guilan, passionate about front-end development and constantly expanding my skills. I have a solid foundation in HTML, CSS, and JavaScript and am currently deepening my knowledge in JavaScript to build real-world projects.  I'm familiar with Object-Oriented Programming (OOP), Java, C++ and I enjoy learning and working on new challenges. While I aim to grow as a freelance front-end developer, I also enjoy collaborating in team projects and open-source contributions.  Always open to new opportunities and connections in the tech world! Let's build something amazing together."
+                }
+            ]
+        },
+        {
+            "title": "Skills",
+            "items": [
+                {
+                    "type": "card",
+                    "content": {
+                        "icon": "FaReact",
+                        "title": "React"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "icon": "IoLogoJavascript",
+                        "title": "Javascipt"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "icon": "FaHtml5",
+                        "title": "HTML"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "icon": "FaCss3",
+                        "title": "CSS"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "icon": "FaJava",
+                        "title": "Java"
+                    }
+                }
+            ]
+
+        }
+    ]
+}

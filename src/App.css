@@ -1,38 +1,221 @@
-.App {
+/*
+html,
+body {
+  height: 100px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fullpage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first {
+  background-color:blue;
+}
+.second {
+  background-color: yellow;
+}
+.third {
+  background-color: gray;
+}
+
+.title,
+.subtitle {
+  color: aliceblue;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.socialIcon{
+  margin: 10px;
+}
+
+.skillsSection {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card{
+  margin: 10px;
+  background-color: aliceblue;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card:hover{
+  box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.3) ;
+}
+
+.about {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.about:hover {
+  transform: translateY(-3px);   /* lift effect */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* stronger hover shadow */
+
+
+*/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #f5f7fa; /* subtle background for empty areas */
+  scroll-behavior: smooth;
+}
+
+.fullpage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.first {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.second {
+  background: linear-gradient(135deg, #f9d423, #ff4e50);
+  color: #222;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.third {
+  background: linear-gradient(135deg, #434343, #000000);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: aliceblue;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.socialIcon {
+  margin: 0 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* About section */
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.about {
+  max-width: 800px;
+  padding: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  background: rgba(255, 255, 255, 0.8);
+  border-left: 4px solid #3498db;
+  border-radius: 8px;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Skills Section */
+.skillsSection {
+  display: flex;
+  flex-wrap: wrap; /* ✅ now works better on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.skill-card {
+  width: 160px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 5px solid;
+  border-image: linear-gradient(to right, rgb(223, 222, 222), rgb(61, 61, 61));
+  border-image-slice: 1;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: -2px 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.skill-icon {
+  margin-bottom: 10px;
+}
+
+.skill-name h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .about {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .skill-card {
+    width: 130px;
+    height: 150px;
   }
 }
