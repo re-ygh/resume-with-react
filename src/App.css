@@ -1,97 +1,11 @@
-/*
-html,
-body {
-  height: 100px;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-.fullpage {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.first {
-  background-color:blue;
-}
-.second {
-  background-color: yellow;
-}
-.third {
-  background-color: gray;
-}
-
-.title,
-.subtitle {
-  color: aliceblue;
-}
-
-.title {
-  margin-bottom: 10px;
-}
-
-.socialIcon{
-  margin: 10px;
-}
-
-.skillsSection {
-  display: flex;
-  flex: auto;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.skill-card{
-  margin: 10px;
-  background-color: aliceblue;
-  display: flex;
-  flex: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.skill-card:hover{
-  box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.3) ;
-}
-
-.about {
-  max-width: 800px;
-  padding: 20px;
-}
-
-.about:hover {
-  transform: translateY(-3px);   /* lift effect */
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* stronger hover shadow */
-
-
-*/
-
 html,
 body {
   height: 100%;
   margin: 0;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
   background: #f5f7fa; /* subtle background for empty areas */
   scroll-behavior: smooth;
-}
-
-.fullpage {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px; 
-  text-align: center;
 }
 
 .first {
@@ -218,4 +132,18 @@ body {
     width: 130px;
     height: 150px;
   }
+}
+
+
+
+.fullpage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+  text-align: center;
 }

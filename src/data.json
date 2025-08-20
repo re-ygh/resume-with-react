@@ -23,35 +23,45 @@
                     "type": "card",
                     "content": {
                         "icon": "FaReact",
-                        "title": "React"
+                        "title": "React",
+                        "link": "/url",
+                        "project-names":"projects"
                     }
                 },
                 {
                     "type": "card",
                     "content": {
                         "icon": "IoLogoJavascript",
-                        "title": "Javascipt"
+                        "title": "Javascipt",
+                        "link": "/url",
+                        "project-names":"projects"
                     }
                 },
                 {
                     "type": "card",
                     "content": {
                         "icon": "FaHtml5",
-                        "title": "HTML"
+                        "title": "HTML",
+                        "link": "/url",
+                        "project-names":"projects"
                     }
                 },
                 {
                     "type": "card",
                     "content": {
                         "icon": "FaCss3",
-                        "title": "CSS"
+                        "title": "CSS",
+                        "link": "/url",
+                        "project-names":"projects"
                     }
                 },
                 {
                     "type": "card",
                     "content": {
                         "icon": "FaJava",
-                        "title": "Java"
+                        "title": "Java",
+                        "link": "/url",
+                        "project-names":"projects"
                     }
                 }
             ]
