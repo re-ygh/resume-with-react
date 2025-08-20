@@ -12,7 +12,7 @@
             "items": [
                 {
                     "type": "P",
-                    "content": "I'm a Computer Engineering student at the University of Guilan, passionate about front-end development and constantly expanding my skills. I have a solid foundation in HTML, CSS, and JavaScript and am currently deepening my knowledge in JavaScript to build real-world projects.  I'm familiar with Object-Oriented Programming (OOP), Java, C++ and I enjoy learning and working on new challenges. While I aim to grow as a freelance front-end developer, I also enjoy collaborating in team projects and open-source contributions.  Always open to new opportunities and connections in the tech world! Let's build something amazing together."
+                    "content": "I'm a Computer Engineering student at the University of Guilan, passionate about front-end development and constantly expanding my skills.\n\nI have a solid foundation in HTML, CSS, and JavaScript and am currently deepening my knowledge in JavaScript to build real-world projects.\n\nI'm familiar with Object-Oriented Programming (OOP), Java, C++ and I enjoy learning and working on new challenges.\n\nWhile I aim to grow as a freelance front-end developer, I also enjoy collaborating in team projects and open-source contributions.\n\nAlways open to new opportunities and connections in the tech world! Let's build something amazing together."
                 }
             ]
         },
@@ -67,5 +67,9 @@
             ]
 
         }
-    ]
+    ],
+    "icons": {
+        "down": "/down.png",
+        "up": "up.png"
+    }
 }

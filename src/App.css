@@ -4,7 +4,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  background: #f5f7fa; /* subtle background for empty areas */
+  background: #f5f7fa;
+  /* subtle background for empty areas */
   scroll-behavior: smooth;
 }
 
@@ -78,43 +79,61 @@ body {
 /* Skills Section */
 .skillsSection {
   display: flex;
-  flex-wrap: wrap; /* ✅ now works better on smaller screens */
+  flex-wrap: wrap;
+  /* ✅ now works better on smaller screens */
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.skill-card {
-  width: 160px;
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
+.downArrow {
+  max-width: 30px;
+  cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 5px solid;
-  border-image: linear-gradient(to right, rgb(223, 222, 222), rgb(61, 61, 61));
-  border-image-slice: 1;
 }
 
-.skill-card:hover {
+.downArrow:hover {
   transform: translateY(-5px);
-  box-shadow: -2px 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-.skill-icon {
-  margin-bottom: 10px;
+.upArrow {
+  max-width: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-name h4 {
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: 600;
+.upArrow:hover {
+  transform: translateY(-5px);
+}
+
+.links-on-top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flexDirection: row;
+  gap: 20px;
+}
+
+.each-link-on-top {
+  color: aliceblue;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.each-link-on-top:hover {
+  transform: translateY(-5px);
+  color: #f9d423;
 }
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
+
+  html,
+  body {
+    font-size: 0.9rem;
+  }
+
   .title {
     font-size: 2.2rem;
   }
@@ -127,23 +146,23 @@ body {
     font-size: 1rem;
     padding: 15px;
   }
-
-  .skill-card {
-    width: 130px;
-    height: 150px;
-  }
 }
 
+@media (max-width: 480px) {
+  .title {
+    font-size: 0.9rem;
+  }
 
+  .subtitle {
+    font-size: 1rem;
+  }
 
-.fullpage {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px; 
-  text-align: center;
+  .skill-card {
+    width: 100px;
+    height: 120px;
+  }
+
+  .skill-icon {
+    transform: scale(0.8);
+  }
 }
